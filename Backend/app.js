@@ -1,15 +1,15 @@
-// - Importing modules at top best practices
+// - Importing modules at top (best practices)
 const dotenv = require('dotenv');
 dotenv.config();
 
 
-// - basic imports 
+// - imports 
 const express = require('express')
 const app = express();
-
-
-// - cors setup
 const cors = require('cors');
+const connectToDb = require('./db/db'); // Import the database connection function
+
+connectToDb(); // - Connect to the database
 app.use(cors());
 
 
