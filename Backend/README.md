@@ -1,6 +1,4 @@
-Here’s clean API documentation for your current route based on your code. 👇
 
----
 
 ## User Routes Documentation
 
@@ -8,7 +6,7 @@ Here’s clean API documentation for your current route based on your code. 👇
 
 **Endpoint**
 
-* **Method:** `POST`
+* **Method:** `POST` 
 * **Path:** `/register` 
 
 ---
