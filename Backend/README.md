@@ -190,4 +190,53 @@ curl -X POST http://localhost:3000/register \
   }'
 ```
 
+
+---
+
+## **2. Login Route**
+
+### **POST /login**
+
+**Purpose:**
+Authenticate user using email + password and return a JWT token.
+
+---
+
+### **Request Body**
+
+```json
+{
+  "email": "user@example.com",
+  "password": "secret123"
+}
+```
+
+---
+
+### **Flow**
+
+1. Validate email & password (express-validator).
+2. Find user by email (`findOne`).
+3. Compare password using `comparePassword()`.
+4. If match → generate token using `generateAuthToken()`.
+5. Return `{ token, user }`.
+
+---
+
+### **Success Response (200)**
+
+```json
+{
+  "token": "<jwt>",
+  "user": { ... }
+}
+```
+
+---
+
+### **Error Responses**
+
+* **400** → Validation errors.
+* **401** → Invalid email or password.
+
 ---
