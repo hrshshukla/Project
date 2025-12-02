@@ -1,4 +1,9 @@
 import React from 'react'
+import Home from './Pages/Home.jsx'
+import UserLogin from './Pages/UserLogin.jsx'
+import UserSignup from './Pages/UserSignup.jsx'
+import CaptainLogin from './Pages/CaptainLogin.jsx'
+import CaptainSignup from './Pages/CaptainSignup.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
