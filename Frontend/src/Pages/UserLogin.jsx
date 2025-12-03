@@ -23,7 +23,7 @@ const UserLogin = () => {
 
       const data = response.data;  
       setUser(data.user);
-      console.log(user);
+      console.log("Logged in successfully", data);
       
       localStorage.setItem("token", data.token);
 
